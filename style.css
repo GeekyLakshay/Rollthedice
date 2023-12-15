@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+
+body {
+  background-image: linear-gradient(135deg, #b82e3c, #7a357d);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+  position: relative;
+}
+
+.new-game,
+.roll-dice,
+.hold {
+  top: 15vh;
+  position: absolute;
+  font-family: "Nunito", sans-serif;
+  font-size: small;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 10vw;
+  height: 5vh;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roll-dice {
+  top: 59vh;
+}
+
+.hold {
+  top: 67vh;
+  width: 7vw;
+}
+
+.new-game > img,
+.roll-dice > img,
+.hold > img {
+  width: 15px;
+  height: 15px;
+  margin-right: 6px;
+  margin-bottom: 2px;
+}
+
+.dice {
+  top: 33vh;
+  position: absolute;
+}
+
+.dice > img {
+  width: 70px;
+  height: 70px;
+}
+
+.player-1 {
+  width: 33%;
+  height: 80vh;
+  border: 0.5px;
+  border-radius: 5px;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+  align-items: center;
+  background-color: #ddb0bc;
+  display: flex;
+}
+
+.player-1-content {
+  margin-left: 33%;
+  font-family: "Nunito", sans-serif;
+}
+
+.player-1-content > h2 {
+  font-size: xx-large;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.player-1-content > h1 {
+  font-size: 400%;
+  font-weight: 400;
+  color: #c6365f;
+  margin-left: 35%;
+  margin-bottom: 80px;
+}
+
+.current-score {
+  border: 0.5px solid transparent;
+  border-radius: 5px;
+  padding: 20px 5px 20px 5px;
+  background-color: #c6365f;
+}
+
+.current-score > p {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: small;
+}
+
+.current-score > h3 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: x-large;
+  font-weight: 400;
+}
+
+.player-2 {
+  width: 33%;
+  height: 80vh;
+  border: 0.5px;
+  border-radius: 5px;
+  border-bottom-left-radius: 0%;
+  border-top-left-radius: 0%;
+  align-items: center;
+  background-color: #bd7c97;
+  display: flex;
+}
+
+.player-2-content {
+  margin-left: 33%;
+  font-family: "Nunito", sans-serif;
+}
+
+.player-2-content > h2 {
+  font-size: xx-large;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.player-2-content > h1 {
+  font-size: 400%;
+  font-weight: 400;
+  color: #c6365f;
+  margin-left: 35%;
+  margin-bottom: 80px;
+}
+
+.new-game,
+.roll-dice,
+.hold:hover {
+  cursor: pointer;
+}
+
+.dice:hover {
+  cursor: pointer;
+}
